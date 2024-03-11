@@ -28,7 +28,7 @@ let persons = [
 
 app.use(cors())
 app.use(express.json())
-
+app.use(express.static('dist'))
 
 app.use(morgan(function (tokens, req, res) {
   if (tokens.method(req, res) === 'POST') {
@@ -52,7 +52,6 @@ app.use(morgan(function (tokens, req, res) {
     ].join(' ')
   }
 }))
-
 
 
 app.get('/info', (request, response) => {

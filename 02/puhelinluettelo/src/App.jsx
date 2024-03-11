@@ -3,6 +3,7 @@ import axios from 'axios'
 import Filter from '../components/Filter'
 import PersonForm from '../components/PersonForm'
 import Note from '../components/Note'
+const baseUrl = 'api/persons'
 
 const App = () => {
   const [persons, setPersons] = useState([])
@@ -10,7 +11,7 @@ const App = () => {
   useEffect(() => {
     console.log('effect')
     axios
-      .get('http://localhost:3001/api/persons')
+      .get(baseUrl)
       .then(response => {
         console.log('promise fulfilled')
         setPersons(response.data)
