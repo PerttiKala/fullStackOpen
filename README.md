@@ -1,1 +1,1 @@
-https://fullstackopen-mkqb.onrender.com/info
+https://fullstackopen-mkqb.onrender.com
