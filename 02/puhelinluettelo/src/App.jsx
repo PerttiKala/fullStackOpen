@@ -39,6 +39,18 @@ const App = () => {
         number : newNumber
       }
       setPersons(persons.concat(ukko))
+
+      axios.post(baseUrl, {
+        name : newName,
+        number : newNumber,
+        id : Math.floor(Math.random() * 10000)
+      })
+      .then(function(response) {
+        console.log(response);
+      })
+      .catch(function(error) {
+        console.log(error)
+      })
     }
   }
 
