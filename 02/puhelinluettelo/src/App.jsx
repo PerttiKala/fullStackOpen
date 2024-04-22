@@ -23,8 +23,6 @@ const App = () => {
   const [newNumber, setNewNumber] = useState('')
   const [filter, setFilter] = useState('')
 
-
-  
   const addNote = (event) => {
     event.preventDefault()
     console.log('button clicked', newName)

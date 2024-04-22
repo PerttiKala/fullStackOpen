@@ -1,9 +1,0 @@
-POST   http://localhost:3003//api/blogs
-Content-Type: application/json
-
-{
-    "author": "Pena Peruna",
-    "topic": "122333",
-    "url": "65f7f07f609ec36941b334ef",
-    "votes": 0
-}
